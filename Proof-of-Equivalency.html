@@ -381,16 +381,16 @@ edges that are both in <span class="math inline">\(G_1\)</span> and
 of edges in <span class="math inline">\(G_1\)</span> and <span class="math inline">\(E_2\)</span> in <span class="math inline">\(G_2\)</span>, so <span class="math inline">\(E_1=J+K\)</span>, <span class="math inline">\(E_2=J+L\)</span>. In this case, <span class="math display">\[J = \frac{E_1+E_2}{2} - \frac{K+L}{2} \\
 K = \frac{E_1-E_2}{2} + \frac{K+L}{2} \\
 L = \frac{E_2-E_1}{2} + \frac{K+L}{2} \\
-K = nm - \frac{E_1-E_2}{2} - \frac{K+L}{2} \\,\]</span> where <span class="math inline">\(n\)</span> and <span class="math inline">\(m\)</span> are the numbers of users and attributes
+M = nm - \frac{E_1+E_2}{2} - \frac{K+L}{2},\]</span> where <span class="math inline">\(n\)</span> and <span class="math inline">\(m\)</span> are the numbers of users and attributes
 respectively.</p>
 <p>Since <span class="math inline">\((G_1, G_2)\)</span> and <span class="math inline">\(\Pi^*\)</span> are independent, <span class="math display">\[P(G_1 = g_1, G_2 =
 \pi^{-1}(g_2&#39;))\propto(\frac{q_{11}q_{00}}{q_{10}q_{01}})^{(-\frac{K+L}{2})}\\
-= exp(-w\frac{K+L}{2})\]</span>, where <span class="math inline">\(w=\frac{q_{11}q_{00}}{q_{10}q_{01}} &gt;0\)</span>
+= exp(-w\frac{K+L}{2})\]</span>, where <span class="math inline">\(w=log(\frac{q_{11}q_{00}}{q_{10}q_{01}})&gt;0\)</span>
 due to positive correlation and <span class="math inline">\(K+L=\Delta^a(G_1,\pi^{-1}(G_2&#39;))\)</span>,
 which is the Hamming distance. Therefore, minimizing the Hamming
 distance can give the max posterior probability. Furthermore, in a given
 <span class="math inline">\((G_1, G_2)\)</span> pair, the total number
-of edges in both graphs, denoted by <span class="math inline">\(E\)</span>, is a fixed number equal to <span class="math inline">\(J+K+L=J+\Delta^a(G_1,\pi^{-1}(G_2&#39;))\)</span>,
+of edges in both graphs, denoted by <span class="math inline">\(E\)</span>, is a fixed number equal to <span class="math inline">\(2J+K+L=2J+\Delta^a(G_1,\pi^{-1}(G_2&#39;))\)</span>,
 so maximizing J will also give the max posterior probability.</p>
 
 
