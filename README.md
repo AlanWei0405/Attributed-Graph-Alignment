@@ -1,22 +1,3 @@
-<script type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_CHTML">
-</script>
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      processEscapes: true},
-      jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
-      extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
-      TeX: {
-      extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
-      equationNumbers: {
-      autoNumber: "AMS"
-      }
-    }
-  });
-</script>
-
 # Attributed Graph Alignment
 This is a research project supervised by Dr. Lele Wang and Dr. Simon Oya. 
 The goal of this project is to match two labeled user graphs with high accuracy. 
@@ -60,14 +41,13 @@ setting. There are 7 hyperparameters required to do so, namely `iteration`, `n`,
 
 ### Common Attribute Method
 
+In `attr_rich_cmn_nbs_hgrn.py`, a cost matrix of common attributes is first generated. Then, the Hungarian Algorithm is 
+implemented to find the optimal matching based on the cost matrix. The equivalency between using common attributes and 
+using the Hamming distance is proved [here](Proof-of-Equivalency.html).
+
 ## Comparison
 
 ## Conclusion
 
 ## Acknowledgement
-
-### [attr_rich_cmn_nbs_hgrn.py](attr_rich_cmn_nbs_hgrn.py)
-In `attr_rich_cmn_nbs_hgrn.py`, a cost matrix of common attributes is first generated. Then, the Hungarian Algorithm is 
-implemented to find the optimal matching based on the cost matrix. The equivalency between using common attributes and 
-using the Hamming distance is proved [here](Proof-of-Equivalency.html).
 
