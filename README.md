@@ -24,14 +24,17 @@ attributes, and `q` is generating probability of a user-attribute edge.
 
 After getting our base graph, we can move on to generate the graph pair. Notice that there are still two hyperparameters
  unused, namely `su` and `sa`. Now, we are going to select the user-user edges with probability `su` and user-attribute 
-edges with probability `sa`. By doing this twice, we obtain the $ G_1 $
+edges with probability `sa`. By doing this twice, we obtain a graph pair of `G1` and `G2`. In the last step of this 
+initialization process, a random permutation will be applied to the user nodes in `G2` leading us to the final graph 
+pair of `G1` and `G2'`.
 
-### [main.py](main.py)
-Firstly, by running `main`, we can set values to the hyperparameters required to initialize a simulation of the problem 
-setting. There are 7 hyperparameters required to do so, namely `iteration`, `n`, `p`, `su`, `m`, `q`, and `sa`.
+By running `main`, we can set values of the hyperparameters required to initialize a simulation of the problem 
+setting. There are 7 hyperparameters required to do so, namely `iteration`, `n`, `p`, `su`, `m`, `q`, and `sa`. In 
+addition to the 6 hyperparameters mentioned, `iteration` is the number of experiments conducted using the same set of 
+hyperparameters.
 
-### [graph_gen.py](graph_gen.py)
-`graph_gen.py` contains the functions required to set up the algorithm.
+[graph_gen.py](graph_gen.py) contains the functions required by the initialization process and will return `G1`, `G2'`, 
+the true permutation `node_mapping` and the number of users `num_users`.
 
 ## Algorithm
 
