@@ -53,7 +53,7 @@ rest of the nodes.
 
 In [`attr_rich_cmn_nbs_hgrn.py`](attr_rich_cmn_nbs_hgrn.py), the same cost matrix is first generated. This time, the Hungarian Algorithm is 
 implemented to find the optimal matching based on the cost matrix. The equivalency between using common attributes and 
-using the Hamming distance is proved [here](https://htmlpreview.github.io/?Proof-of-Equivalency.html).
+using the Hamming distance is proved [here](Proof-of-Equivalency.html).
 
 ### Hungarian Algorithm using Hamming Distance Method
 
