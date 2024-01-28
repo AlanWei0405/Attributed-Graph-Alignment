@@ -1,4 +1,3 @@
-# Attributed Graph Alignment
 This is a research project supervised by Dr. Lele Wang and Dr. Simon Oya. 
 The goal of this project is to match two labeled user graphs with high accuracy. 
 The previous work was done by Dr. Wang's Ph.D. student Ziao Wang and this repository is created and maintained 
